@@ -1,0 +1,43 @@
+*{    
+    color: white;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    margin: 0;
+}
+#container {
+    max-width: 615px;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+img, span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span {
+    display: block;
+    margin-top: 20px;
+}
+button {
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    outline-color: lightgreen;
+    border: 1px solid transparent;
+}
+button:hover {
+    border: 1px solid lightgreen;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
