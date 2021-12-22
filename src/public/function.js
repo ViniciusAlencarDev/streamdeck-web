@@ -1,6 +1,7 @@
+const ip = "192.168.56.1"
 window.onload = () => {
     const div = document.querySelector('#container')
-    fetch('http://10.0.0.120:3333/list')
+    fetch(`http://${ip}:3333/list`)
         .then(res => res.json())
         .then(data => {
             data.map((valor) => {
@@ -14,7 +15,7 @@ window.onload = () => {
         })
 }
 function clique(param) {
-    fetch(`http://10.0.0.120:3333/${param}`)
+    fetch(`http://${ip}:3333/${param}`)
         .then(res => res.text())
         .then(data => {
             console.log(data)
